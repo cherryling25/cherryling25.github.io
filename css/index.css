@@ -87,11 +87,6 @@ a:hover {
     background: #fff;
     font-family: "hoefler text", georgia, times, serif;
 } 
-@media (max-width: 768px){
-    .nav-links{
-        display:none;
-    }
-}
 .item{
     margin-top: 9px;
 }

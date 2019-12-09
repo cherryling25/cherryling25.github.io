@@ -87,11 +87,7 @@ a{
     text-decoration: none;
     color: rgb(125, 214, 97)!important;
 }
-/* @media (max-width: 768px){
-    .nav-links{
-        display:none;
-    }
-} */
+
 .item{
     margin-bottom: 25px;
 }
