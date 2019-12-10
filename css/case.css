@@ -212,15 +212,16 @@ a{
 }
 .grid li{
 	flex-grow: 1;
-    flex-basis: 33%;
-	max-width: 30%;
+    flex-basis: 28%;
+	max-width: 28%;
     margin: 2rem 0rem;
     position: relative;
     display: none;
 }
 .grid img{
     width: 100%;
-    height:350px;
+    height:360px;
+    border: 1px solid rgb(209, 207, 207);
 }
 .project_item{
     position: absolute;
@@ -304,23 +305,27 @@ a{
 /* Media Queries */
 
 @media(max-width: 1200px) {
-    .grid img {
-		width: 270px;
-		height: 230px;
-	}
-	footer {
-		text-align: center;
+    .grid li{
+        flex-basis: 28%;
+        max-width: 28%;
     }
+    .grid img { /*以 grid li 为基准*/
+		width: 100%;
+		height: 330px;
+	}
     .project_item{
-        width: 270px;
-		height: 230px;
+        width: 100%;
+		height: 100%;
     }
     .project_item:hover{
-        width: 270px;
-		height: 230px;
+        width: 100%;
+		height: 100%;
     }
     .container{
         width: 1000px;
+    }
+    footer {
+		text-align: center;
     }
 }
 
@@ -329,14 +334,9 @@ a{
         width: 750px;
     }
     
-    .grid li{
-        flex-basis: 47%;
-        max-width: 47%;
-        margin: 1rem 0rem;
-    }
-	.grid img{      /*以 grid li 为基准*/
+	.grid img{     
         width: 100%;
-        height: 100%;
+        height: 330px;
     }
     
     .project_item{
@@ -356,21 +356,8 @@ a{
     }
     
     .grid li{
-        flex-basis: 49%;
-        max-width: 49%;
-    }
-	
-    .item_info span {
-        transform: translateY(-70px);
-    }
-    .project_item:hover span {    /* 进入project_item_hover时，span的样式 */
-        transform: translateY(0px); 
-    }
-    .item_info em {
-        transform: translateY(70px);
-    }
-    .project_item:hover em {
-        transform: translateY(0px);
+        flex-basis: 45%;
+        max-width: 45%;
     }
 }
 
@@ -379,8 +366,9 @@ a{
         width: 420px;
     }
 	.grid li{
-        flex-basis: 100%;
-        max-width: 100%;
+        flex-basis: 70%;
+        max-width: 70%;
+        margin: 1.5rem auto;
     }
     
 }
