@@ -1,6 +1,6 @@
 
 window.onload = function () {
-    //导航条的 '关于我'
+    /* //导航条的 '关于我'
     var aboutMe = document.getElementById('aboutMe');
     var ulDropdown = document.getElementById('ulDropdown');
     aboutMe.onmouseover = function () {
@@ -26,7 +26,7 @@ window.onload = function () {
             };
         }(divClass[i].style);
     }
-  
+   */
    
     // 过滤
    // animate divs on start
