@@ -374,12 +374,11 @@ nav .navbar-brand{
 
 @media(max-width: 500px){
     .container{
-        width: 400px;
+        width: 375px;
     }
 	.grid li{
-        flex-basis: 90%;
-        max-width: 90%;
+        flex-basis: 80%;
+        max-width: 80%;
         margin: 1.5rem auto;
     }
-    
 }

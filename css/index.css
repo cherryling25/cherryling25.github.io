@@ -21,10 +21,56 @@ a:hover {
 }
 
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
+
+.nav-button {
+	display: none;
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 16px;
+	margin-right: 25px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	background: #eaecef; 
 }
+.nav-button .icon-bar {
+	display: block;
+	margin-top: 4px;
+	width: 22px;
+	height: 2px;
+	background: #868c94;
+	border-radius: 1px; 
+}
+.btnDropdown{
+    position: relative;
+    width: 100%;
+	margin-top: 70px;
+	border-bottom: 1px solid #eaecef;
+	background: #FCFAFA;
+}
+
+.oneUl{
+    margin-left: 30px;
+}
+.oneUl li{
+    padding-top: 15px; 
+}
+.oneUl ul a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+.twoUl li{
+	padding-left: 15px;
+	padding-top: 20px;
+}
+.twoUl li a:hover{
+	color: pink;
+}
+
+
 .header{
     width: 100%;
     height: 70px;
@@ -49,7 +95,7 @@ a:hover {
 }
 .nav-links{
     position: absolute;
-    right: 30px;
+    right: 0px;
     top: 25px;
 }
 .linkBorder{
@@ -227,11 +273,14 @@ a:hover {
 
 @media(max-width: 1200px) {
 
-	.hero-img {
+	/* .hero-img {
 		width: 500px;
 		height: 500px;
 	}
-
+ */
+	.skills{
+		margin-top: 15rem;
+	}
 	footer {
 		text-align: center;
 	}
@@ -262,10 +311,17 @@ a:hover {
 		text-align: center !important;
 	}
 	.skills{
-		margin-top: 12rem;
+		margin-top: 10rem;
 	}
 }
-
+@media(max-width: 768px){
+	.nav-button{
+		display: block;
+	}
+	.navTwo{
+		display: none;
+	}
+}
 @media(max-width: 585px){
 	.hero-img {
 		width: 350px;
@@ -277,7 +333,7 @@ a:hover {
 	}
 	.skills{
 		text-align: left;
-		margin-top: 10rem;
+		margin-top: 8rem;
 	}
 	.skill{
 		flex-basis: 100%;
