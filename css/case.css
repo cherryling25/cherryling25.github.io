@@ -15,7 +15,8 @@ body{
 
 nav .navbar-brand{
     font-size: 30px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 35px;
     border: 0px solid red;
     font-family:'黑体';
     font-weight: 600;
@@ -373,11 +374,11 @@ nav .navbar-brand{
 
 @media(max-width: 500px){
     .container{
-        width: 420px;
+        width: 400px;
     }
 	.grid li{
-        flex-basis: 70%;
-        max-width: 70%;
+        flex-basis: 90%;
+        max-width: 90%;
         margin: 1.5rem auto;
     }
     
