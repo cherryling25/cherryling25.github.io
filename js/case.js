@@ -1,6 +1,6 @@
 
 window.onload = function () {
-    /* //导航条的 '关于我'
+    //导航条的 '关于我'
     var aboutMe = document.getElementById('aboutMe');
     var ulDropdown = document.getElementById('ulDropdown');
     aboutMe.onmouseover = function () {
@@ -26,8 +26,32 @@ window.onload = function () {
             };
         }(divClass[i].style);
     }
-   */
-   
+  
+    // ul 显示隐藏
+    function Show_Hidden(obj){
+        if(obj.style.display=="block"){
+            obj.style.display='none';
+        }else{
+            obj.style.display='block';
+        }
+    }
+    
+    var btnAboutMe = document.getElementById('btnAboutMe');
+    var btnUlDropdown = document.getElementById('btnUlDropdown');
+    btnAboutMe.onclick = function () {
+        Show_Hidden(btnUlDropdown);
+        return false;
+    }
+
+    
+    var navBtn = document.getElementsByClassName('nav-button')[0];
+    var btnDropdown = document.getElementsByClassName('btnDropdown')[0];
+    navBtn.onclick = function () {
+        Show_Hidden(btnDropdown);
+        return false;
+    }
+
+
     // 过滤
    // animate divs on start
     var items = document.querySelectorAll('.filter-sections li');
