@@ -8,6 +8,7 @@ window.onload = function () {
         ulDropdown.style.display = 'none';
     }
 
+    
 
     function Show_Hidden(obj){
         if(obj.style.display=="block"){
@@ -21,7 +22,6 @@ window.onload = function () {
     var btnUlDropdown = document.getElementById('btnUlDropdown');
     btnAboutMe.onclick = function () {
         Show_Hidden(btnUlDropdown);
-        return false;
     }
 
     
@@ -29,7 +29,6 @@ window.onload = function () {
     var btnDropdown = document.getElementsByClassName('btnDropdown')[0];
     navBtn.onclick = function () {
         Show_Hidden(btnDropdown);
-        return false;
     }
    
 
