@@ -443,7 +443,7 @@ a:hover {
 
 @media(max-width: 500px){
     .container{
-        width: 375px;
+        width: 355px;
     }
 	.grid li{
         flex-basis: 80%;
